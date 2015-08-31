@@ -18,7 +18,7 @@ import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 
 /**
- * Created by sangc on 2015-08-25.
+ * Created by sangcomz on 2015-08-25.
  */
 public class GoogleSettingsApi implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
     GoogleSettingsApi(final Context context){
@@ -35,8 +35,6 @@ public class GoogleSettingsApi implements GoogleApiClient.ConnectionCallbacks, G
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
                 .addLocationRequest(mLocationRequestHighAccuracy)
                 .addLocationRequest(mLocationRequestBalancedPowerAccuracy);
-
-//        builder.setNeedBle(true);
 
 
         PendingResult<LocationSettingsResult> result =
